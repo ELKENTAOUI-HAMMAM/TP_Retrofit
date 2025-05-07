@@ -9,7 +9,6 @@
     android:background="#F9F9F9"
     tools:context=".MainActivity">
 
-    <!-- Barre de recherche stylisée -->
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -27,16 +26,16 @@
             android:padding="8dp" />
     </androidx.cardview.widget.CardView>
 
-    <!-- RecyclerView stylisé -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@color/material_dynamic_secondary60"
         android:paddingHorizontal="16dp"
         android:paddingTop="8dp"
         android:paddingBottom="8dp"
-        tools:listitem="@layout/item_user"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/item_user" />
 
 </LinearLayout>
